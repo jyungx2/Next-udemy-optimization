@@ -9,9 +9,10 @@ export default function Header() {
       <Link href="/">
         <Image
           src={logo}
-          // width={100}
-          // height={100}
-          sizes="20vw"
+          width={100}
+          height={100}
+          // sizes="20vw"
+          priority // this image will always be visible when the page loads and therefore when navigating to that page, NextJS would preload the image and lazy loading will also be disabled. (-> Elements탭에서 lazy loading 속성이 없어지고, fetchpriority="high"로 설정됨)
           alt="Mobile phone with posts feed on it"
         />
       </Link>
