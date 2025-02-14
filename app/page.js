@@ -3,6 +3,8 @@ import { Suspense } from "react";
 import Posts from "@/components/posts";
 import { getPosts } from "@/lib/posts";
 
+// 📌 정적 메타데이터 설정 방식
+// ⭐️ metadata: reserved name
 export const metadata = {
   title: "Latest Posts",
   description: "Browse our latest posts!",
